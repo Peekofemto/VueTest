@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicios Vue</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app">
+    {{ message }}
+  </div>
+
+  <div class="contenedorEjercicios">
+    <ul class="listaEjercicios">
+      
+      <li style="list-style-type: none;">
+        <a href="bindTitle.html" target="_blank" type=button class="bindTitle">Ejercicio #1 - Bind Title</a>  
+      </li>
+      <li style="list-style-type: none;">
+        <a href="ifSeen.html" target="_blank" type=button class="ifSeen">Ejercicio #2 - If Seen</a>
+      </li>
+      <li style="list-style-type: none;">
+        <a href="forTodos.html" target="_blank" type=button class="forTodos">Ejercicio #3 - For Todos</a>
+      </li>
+      <li style="list-style-type: none;">
+        <a href="onClickMessage.html" target="_blank" type=button class="forTodos">Ejercicio #4 - v-on:click</a>
+      </li>
+      </ul> 
+    </div>
+
+
+  <script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Lista Ejercicios Vue!'
+        }
+    })
+    
+  </script>
+</body>
+</html>
